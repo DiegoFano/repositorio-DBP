@@ -1,0 +1,50 @@
+.border-t-b {
+    border-top: 2px solid #c0c0c0; /* Cambia #000 al color que prefieras */
+    border-bottom: 2px solid #c0c0c0; /* Cambia #000 al color que prefieras */
+  }
+  
+
+
+/* /* Archivo: styles.css 
+
+.logo-home svg {
+    fill: #111;
+}
+
+.navbar-header .logo-home {
+    height: 60px;
+    width: 60px;
+}
+
+.nav-search-block .menu-group .menuItem-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-search-block .dropdown-item .dropdown-link {
+    padding: 10px;
+    color: #000;
+    text-decoration: none;
+}
+
+.nav-search-block .dropdown-item .dropdown-link:hover {
+    color: #007bff;
+}
+
+.close-menu .js-close-menu {
+    background: none;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.close-menu .close-button button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-group .subCategory-menu {
+    font-weight: bold;
+}
+ */
