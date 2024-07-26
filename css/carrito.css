@@ -1,9 +1,22 @@
+
+/* body{
+    height: 110vh;
+
+} */
+*{
+    border: 1px solid #ff00007e;
+}
 .border-t-b {
     border-top: 2px solid #c0c0c0; /* Cambia #000 al color que prefieras */
     border-bottom: 2px solid #c0c0c0; /* Cambia #000 al color que prefieras */
-  }
-  
+}
+.border-b {
+    border-bottom: 2px solid #c0c0c0; /* Cambia el grosor y el color del borde aquí */
+}
 
+#favoritos > *{
+    margin-right: 7px;
+}
 
 /* /* Archivo: styles.css 
 
