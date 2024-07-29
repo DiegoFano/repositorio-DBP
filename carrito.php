@@ -215,7 +215,7 @@
     </div>
   </div>
   
-  <footer class="mt-auto pt-5 pb-3 bg-black">
+<!--   <footer class="mt-auto pt-5 pb-3 bg-black">
     <div class="container-sm-fluid container-md row m-auto">
       <div class="col-3 col-lg-2">
         <a href="" class="link-ft">
@@ -288,6 +288,7 @@
       </div>
     </div>
   </footer>
-
+ -->
+ <?php include  'templates/pie.html'; ?>
 </body>
 </html>
