@@ -1,10 +1,16 @@
+/* *{
+    border: 1px solid #c0c0c0;
+} */
 
 /* body{
     height: 110vh;
 
 } */
-*{
+/*  footer  *{
     border: 1px solid #ff00007e;
+} */
+body{
+    min-height: 100vh;
 }
 .border-t-b {
     border-top: 2px solid #c0c0c0; /* Cambia #000 al color que prefieras */
@@ -18,46 +24,32 @@
     margin-right: 7px;
 }
 
-/* /* Archivo: styles.css 
-
-.logo-home svg {
-    fill: #111;
-}
-
-.navbar-header .logo-home {
-    height: 60px;
-    width: 60px;
-}
-
-.nav-search-block .menu-group .menuItem-container {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.nav-search-block .dropdown-item .dropdown-link {
-    padding: 10px;
-    color: #000;
+/* -------------- footer--------------  */
+.link-ft{
     text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif ;
 }
 
-.nav-search-block .dropdown-item .dropdown-link:hover {
-    color: #007bff;
+.links-ft *{
+    color: rgb(114, 114, 114) !important;
+    font-size: 85% !important;
 }
 
-.close-menu .js-close-menu {
-    background: none;
-    border: none;
-    font-size: 14px;
-    cursor: pointer;
+.links-ft *:hover{
+    color: rgb(217, 217, 217) !important;
 }
 
-.close-menu .close-button button {
-    background: none;
-    border: none;
-    cursor: pointer;
+#icon-ft{
+    gap: 3%;
 }
 
-.menu-group .subCategory-menu {
-    font-weight: bold;
+.c-text-ft{
+    gap: 20px;
 }
- */
+
+.text-ft{
+    text-decoration: none;
+    font-size: 11px;
+    color: rgb(114, 114, 114) !important;
+}
