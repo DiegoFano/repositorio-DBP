@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bra Finder</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="number"], select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #result {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f0f0f0;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bra Finder</h1>
+    <form id="braFinderForm">
+        <div class="form-group">
+            <label for="bandSize">Medida de la banda (cm):</label>
+            <input type="number" id="bandSize" required>
+        </div>
+        <div class="form-group">
+            <label for="bustSize">Medida del busto (cm):</label>
+            <input type="number" id="bustSize" required>
+        </div>
+        <div class="form-group">
+            <label for="shape">Forma del pecho:</label>
+            <select id="shape" required>
+                <option value="">Selecciona una opción</option>
+                <option value="redondo">Redondo</option>
+                <option value="conico">Cónico</option>
+                <option value="asimetrico">Asimétrico</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="preference">Preferencia de estilo:</label>
+            <select id="preference" required>
+                <option value="">Selecciona una opción</option>
+                <option value="cotidiano">Uso cotidiano</option>
+                <option value="deportivo">Deportivo</option>
+                <option value="elegante">Elegante</option>
+            </select>
+        </div>
+        <button type="submit">Encontrar mi bra ideal</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script>
+        document.getElementById('braFinderForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const bandSize = document.getElementById('bandSize').value;
+            const bustSize = document.getElementById('bustSize').value;
+            const shape = document.getElementById('shape').value;
+            const preference = document.getElementById('preference').value;
+
+            // Cálculo básico de la talla de copa
+            const cupSize = bustSize - bandSize;
+            let cupLetter = '';
+            if (cupSize <= 2.5) cupLetter = 'A';
+            else if (cupSize <= 5) cupLetter = 'B';
+            else if (cupSize <= 7.5) cupLetter = 'C';
+            else if (cupSize <= 10) cupLetter = 'D';
+            else cupLetter = 'DD o mayor';
+
+            // Recomendación básica
+            let recommendation = `Basado en tus medidas, tu talla aproximada de bra es ${bandSize}${cupLetter}. `;
+            recommendation += `Para un pecho ${shape} y uso ${preference}, recomendamos: `;
+
+            switch(preference) {
+                case 'cotidiano':
+                    recommendation += "un bra de cobertura completa con soporte adecuado.";
+                    break;
+                case 'deportivo':
+                    recommendation += "un bra deportivo de alto impacto con máximo soporte.";
+                    break;
+                case 'elegante':
+                    recommendation += "un bra balconet o push-up para realzar tu figura.";
+                    break;
+            }
+
+            document.getElementById('result').innerHTML = recommendation;
+        });
+    </script>
+</body>
+</html>
