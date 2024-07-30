@@ -57,7 +57,7 @@ $conn->close();
         </div>
     </nav> 
 
-    <div class="container-lg container-fluid ">
+    <div class="container-lg container-fluid mb-5">
         <div class="text-center">
             <h1>Comprar</h1>
         </div>
@@ -181,7 +181,7 @@ $conn->close();
         </div>
     </div>
 
-    <footer class="mt-auto pt-4 pb-3 bg-black m-0">
+    <footer class="mt-auto pt-2 pb-3 bg-black m-0">
         <div class="container-sm-fluid container-md p-0 m-auto mt-5 justify-content-between row">
             <div class="d-flex c-text-ft col-12 col-lg-6">
                 <a href="" class="text-ft text-white" >Peru</a>
