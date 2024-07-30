@@ -1,7 +1,7 @@
 /* *{
     border: 1px solid #c0c0c0;
-} */
-
+}
+ */
 /* body{
     height: 110vh;
 
@@ -11,6 +11,7 @@
 } */
 body{
     min-height: 100vh;
+
 }
 .border-t-b {
     border-top: 2px solid #c0c0c0; /* Cambia #000 al color que prefieras */

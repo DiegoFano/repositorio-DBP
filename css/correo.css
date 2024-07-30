@@ -1,0 +1,31 @@
+.font-h{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+}
+
+.select-as-text {
+    background: none;
+    border: none;
+    color: grey;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+    -webkit-appearance: none; /* Elimina la apariencia predeterminada en WebKit */
+    -moz-appearance: none;    /* Elimina la apariencia predeterminada en Firefox */
+    appearance: none;         /* Elimina la apariencia predeterminada en otros navegadores */
+}
+.select-as-text:focus {
+    outline: none; /* Elimina el borde de enfoque */
+}
+.select-as-text option[disabled] {
+    display: none; /* Oculta la opción "Cambiar" */
+}
+.select-as-text option {
+    background: white; /* Fondo blanco para opciones */
+    color: black;      /* Color negro para opciones */
+}
+.select-as-text::-ms-expand {
+    display: none; /* Oculta la flecha en Internet Explorer y Edge */
+}
